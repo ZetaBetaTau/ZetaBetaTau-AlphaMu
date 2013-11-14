@@ -8,8 +8,9 @@
 
     <!-- Le javascript
     ================================================== -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap.js"></script>
+  
+    <script src="<?php bloginfo('template_url'); ?>/bootstrap/js/bootstrap.js"></script>
+
 
 <?php wp_footer(); ?>
 

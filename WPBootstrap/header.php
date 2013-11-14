@@ -13,6 +13,9 @@
 
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/bootstrap/js/fitvids.js"></script>
+        
   </head>
   <body>
 
@@ -33,5 +36,3 @@
     </div>
   </div>
 </div>
-
-  <div class="container">
