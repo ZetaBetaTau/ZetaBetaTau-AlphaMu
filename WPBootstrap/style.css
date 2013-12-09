@@ -13,8 +13,109 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 */
 
 @import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css'); 
-body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+@import url('bootstrap/css/bootstrap-responsive.css');
+.navbar-inner{
+  background-color: #FFFFFF; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+.navbar .navbar-inner {
+    padding: 0;
+}
+.brand{font-family: 'Montserrat Subrayada', sans-serif;
+		font-weight: 400; }
+		
+		.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+	text-align:center;
+}
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+	text-align:left;
+}
+
+#rushButton{color:#ffffff;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+			background-image: linear-gradient(to bottom, #0088cc, #00476B);}
+#rushButton{background-color: #01496D;}
+
+footer{background-image: linear-gradient(to bottom, #566AFF, #3D43BE);
+	  color:#ffffff;}
+footer h4{color:#ffffff;}
+footer a{color:#ffffff;}
+footer a:hover{color:#d1d1d1;}
+.hero-unit{
+text-align:center;
+color:#ffffff;
+text-shadow: 0 1px 0 #000000;
+background-color:transparent;
+}
+.hero-unit h1{font-family: 'Lobster', cursive;
+			  font-weight: normal;
+letter-spacing: 0px;
+font-size: 120px;
+text-shadow: 0 2px 0 #000000;}
+.navbar .nav li:first-child a:hover {
+   text-decoration:none;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.navbar .nav > li > a {color:000000; font-size: 16px;}
+.navbar  .nav> li > a:hover {text-decoration:underline; }
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus, .navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .active > a:focus, .navbar .nav .current_page_item a, .navbar .nav .current_page_item a:hover, .navbar .nav .current_page_item a:focus, .navbar .nav .current_page_parent a, .navbar .nav .current_page_parent a:hover, .navbar .nav .current_page_parent a:focus {
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.current_page_item{background-color: #0088cc;}
+
+#join a{font-size: 18px;}
+#join {background: linear-gradient(to bottom, rgba(241,197,36,1) 0%,rgba(210,164,1,1) 100%);
+	text-shadow:none;
+	text-align:center;
+	font-family: 'Kaushan Script', cursive;
+	}
+.navbar .nav > #join > a {text-shadow:none;}
+.twitter-hover {
+background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/twitter-hover.png');
+}
+.facebook-hover {
+background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/facebook-hover.png');
+}
+.instagram-hover {
+background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/instagram-hover.png');
+}
+.linkedin-hover {
+background-image: url('http://bradsknutson.com/wp-content/themes/bradsknutson/images/linkedin-hover.png');
+}
+.social-slide {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	background-position: 0px -48px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide:hover {
+	background-position: 0px 0px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }

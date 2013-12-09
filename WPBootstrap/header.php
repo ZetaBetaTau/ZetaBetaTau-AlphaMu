@@ -14,23 +14,28 @@
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/bootstrap/js/fitvids.js"></script>
-        
+       <link href='http://fonts.googleapis.com/css?family=Lobster|Kaushan+Script&subset=all' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-static-top">
+  
   <div class="navbar-inner">
-    <div class="container">
+	<div class="container">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
       <div class="nav-collapse collapse">
+	 
         <ul class="nav">
-<?php wp_list_pages(array('title_li' => '', 'exclude' => 9)); ?>
+		 <li>
+	  <a class="brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/bootstrap/img/logo.jpg"></a>
+	  </li>
+<?php wp_list_pages(array('title_li' => '', 'exclude' => 6)); ?>
+		<li><a href="#contact">Contact Us</a></li>
+		<li id="join"><a href="#myModal" data-toggle="modal">Join Us</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
